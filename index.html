@@ -7,217 +7,187 @@
 <link rel="stylesheet" href="assets/css/style.css">
 
 <style>
+body {font-family: Arial; margin:0;}
 
-/* EXTRA PRO STYLES */
-body {overflow-x:hidden;}
-
-.hero-wide {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-  url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
-  background-size: cover;
-  background-position: center;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.hero {
+  background: linear-gradient(135deg,#1E40AF,#FBBF24);
   color:white;
+  padding:100px 20px;
   text-align:center;
 }
 
-.hero-wide h1 {
-  font-size:3.5rem;
-}
+.section {padding:60px 20px; text-align:center;}
 
-.counter-section {
-  display:flex;
-  justify-content:space-around;
-  padding:40px;
-  background:#111827;
-  color:white;
-  flex-wrap:wrap;
-}
-
-.counter-box {
-  text-align:center;
-  margin:10px;
-}
-
-.counter-box h2 {
-  color:#FBBF24;
-  font-size:2.5rem;
-}
-
-.testimonials {
-  background:#f9fafb;
-  padding:60px 20px;
-  text-align:center;
-}
-
-.testimonial-card {
-  max-width:300px;
+.container {
+  max-width:1200px;
   margin:auto;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
   background:white;
   padding:20px;
   border-radius:10px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.ticker {
-  background:#1E40AF;
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+footer {
+  background:#111827;
   color:white;
-  padding:10px;
-  overflow:hidden;
-  white-space:nowrap;
+  padding:40px 20px;
 }
 
-.ticker span {
-  display:inline-block;
-  padding-left:100%;
-  animation:ticker 15s linear infinite;
+footer .footer-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
 }
 
-@keyframes ticker {
-  0% {transform:translateX(0);}
-  100% {transform:translateX(-100%);}
-}
+a {text-decoration:none;}
 
 </style>
 </head>
 
 <body>
 
-<header>
-<nav>
-<h2 style="color:#1E40AF;">Starhela <span style="color:#FBBF24;">Agency</span></h2>
-<ul class="nav-links">
-<li><a href="#hero">Home</a></li>
-<li><a href="#earning">Earning</a></li>
-<li><a href="register.html">Register</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
-
-<!-- LIVE TICKER -->
-<div class="ticker">
-  <span>🔥 John earned $50 • Ali earned $120 • Sarah earned $80 • Mike earned $200 • Join now and start earning today!</span>
-</div>
-
 <!-- HERO -->
-<section class="hero-wide" id="hero">
-<div>
-<h1>Earn Online Daily</h1>
-<p>Crypto • Videos • Ads • Referrals • Bonuses</p>
-<a href="register.html" class="btn btn-main">Start Earning Now</a>
-</div>
+<section class="hero">
+<h1>Welcome to Starhela Agency</h1>
+<p>Earn online through simple daily tasks, referrals and digital activities.</p>
+<a href="register.html" style="background:white;color:#1E40AF;padding:12px 25px;border-radius:5px;">Get Started</a>
 </section>
 
-<!-- COUNTERS -->
-<section class="counter-section">
-<div class="counter-box">
-<h2 id="users">0</h2>
-<p>Users</p>
-</div>
+<!-- HOW IT WORKS -->
+<section class="section">
+<div class="container">
+<h2>How You Earn</h2>
 
-<div class="counter-box">
-<h2 id="earnings">0</h2>
-<p>Total Earnings</p>
-</div>
+<div class="grid">
 
-<div class="counter-box">
-<h2 id="tasks">0</h2>
-<p>Tasks Completed</p>
-</div>
-</section>
-
-<!-- EARNING METHODS -->
-<section id="earning" class="section">
-<h2 class="section-title">Ways to Earn</h2>
-
-<div class="services-grid">
-
-<div class="service-card">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1581090700227-1e8c6fddcf2f">
 <h3>Watch Videos</h3>
-<p>Earn from TikTok & YouTube videos.</p>
+<p>Watch YouTube and TikTok content and earn rewards for each completed task.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da">
-<h3>Ads Clicking</h3>
-<p>Click ads and get paid.</p>
+<h3>Click Ads</h3>
+<p>Engage with ads and earn small payments instantly.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040">
-<h3>Crypto</h3>
-<p>Fast crypto withdrawals.</p>
+<h3>Crypto Withdrawals</h3>
+<p>Withdraw your earnings securely using cryptocurrency wallets.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
-<h3>Referrals</h3>
-<p>Invite friends and earn more.</p>
+<h3>Referral System</h3>
+<p>Invite friends and earn commissions from their activities.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b1">
 <h3>Spin & Win</h3>
-<p>Daily bonus rewards.</p>
+<p>Spin the reward wheel daily and win bonuses.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
 <h3>Chat & Earn</h3>
-<p>Earn while chatting globally.</p>
+<p>Chat with users globally and earn rewards for engagement.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" style="background:#f9fafb;">
+<div class="container">
+<h2>About Starhela Agency</h2>
+<p>
+Starhela Agency is a digital earning platform that provides users with opportunities to earn online 
+through simple tasks such as watching videos, clicking ads, referrals, and more. 
+Our mission is to make online earning accessible, flexible, and rewarding for everyone worldwide.
+</p>
+</div>
+</section>
+
+<!-- BONUSES -->
+<section class="section">
+<div class="container">
+<h2>Bonuses & Rewards</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Welcome Bonus</h3>
+<p>Get rewarded immediately after signing up.</p>
+</div>
+
+<div class="card">
+<h3>Weekly Bonuses</h3>
+<p>Earn extra rewards based on your activity every week.</p>
+</div>
+
+<div class="card">
+<h3>Daily Tasks</h3>
+<p>Complete tasks daily and grow your income consistently.</p>
+</div>
 </div>
 
 </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-<h2>What Users Say</h2>
-
-<div class="testimonial-card">
-<p>"I earned my first $100 in 2 days!"</p>
-<strong>- David</strong>
+<!-- CONTACT -->
+<section class="section" style="background:#f9fafb;">
+<div class="container">
+<h2>Contact Us</h2>
+<p>Email: support@starhela.com</p>
+<p>WhatsApp: +971 000 000 000</p>
+<p>Location: Dubai, UAE</p>
 </div>
-
-<br>
-
-<div class="testimonial-card">
-<p>"Very easy and fast payments!"</p>
-<strong>- Aisha</strong>
-</div>
-
 </section>
 
 <!-- FOOTER -->
 <footer>
-<p>© 2026 Starhela Agency — All Rights Reserved</p>
+<div class="footer-grid">
+
+<div>
+<h3>Starhela Agency</h3>
+<p>Helping you earn online easily and securely.</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<p><a href="index.html" style="color:white;">Home</a></p>
+<p><a href="register.html" style="color:white;">Register</a></p>
+<p><a href="contact.html" style="color:white;">Contact</a></p>
+</div>
+
+<div>
+<h3>Legal</h3>
+<p>Terms & Conditions</p>
+<p>Privacy Policy</p>
+</div>
+
+</div>
+
+<br>
+<p style="text-align:center;">© 2026 Starhela Agency. All rights reserved.</p>
 </footer>
-
-<script>
-
-/* COUNTER ANIMATION */
-function animate(id, max) {
-  let count = 0;
-  let interval = setInterval(() => {
-    count += Math.ceil(max/100);
-    if(count >= max) {
-      count = max;
-      clearInterval(interval);
-    }
-    document.getElementById(id).innerText = count;
-  }, 20);
-}
-
-animate("users", 12500);
-animate("earnings", 54000);
-animate("tasks", 98000);
-
-</script>
 
 </body>
 </html>
