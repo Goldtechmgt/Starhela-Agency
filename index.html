@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starhela Agency</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+  <style>
+ /* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif; }
+body { scroll-behavior: smooth; background: #f9f9f9; color:#1E40AF; }
+
+/* Navbar */
+.navbar {
+  display:flex; justify-content:space-between; align-items:center;
+  padding: 1rem 2rem; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky; top:0; z-index: 1000;
+}
+.navbar .logo img { height:50px; }
+.nav-links { list-style:none; display:flex; gap:1.5rem; }
+.nav-links a { text-decoration:none; color:#1E40AF; font-weight:700; transition:0.3s; }
+.nav-links a:hover { color:#FBBF24; }
+
+/* Hero */
+.hero {
+  display:flex; justify-content:center; align-items:center;
+  height:80vh; background: linear-gradient(to right, #1E40AF, #2563EB);
+  color:white; text-align:center;
+}
+.hero h1 { font-size:3rem; margin-bottom:1rem; }
+.hero p { font-size:1.2rem; margin-bottom:2rem; }
+.btn-primary {
+  background:#FBBF24; color:#1E40AF; padding:0.8rem 2rem; text-decoration:none;
+  border-radius:5px; font-weight:700; transition:0.3s;
+}
+.btn-primary:hover { background:#FFD54F; }
+
+/* Services */
+.services { padding:4rem 2rem; text-align:center; }
+.services h2 { font-size:2.5rem; margin-bottom:2rem; color:#1E40AF; }
+.service-cards { display:flex; gap:2rem; flex-wrap:wrap; justify-content:center; }
+.card { background:white; padding:2rem; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s; width:300px; }
+.card:hover { transform: translateY(-10px); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+.card h3 { margin-bottom:1rem; color:#1E40AF; }
+.card p { color:#555; }
+
+/* Footer */
+footer { text-align:center; padding:2rem; background:#1E40AF; color:white; }
+footer .social a { margin:0 1rem; color:#FBBF24; text-decoration:none; transition:0.3s; }
+footer .social a:hover { color:white; }
+
+ </style>
+  
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><img src="assets/images/logo.png" alt="Starhela Agency Logo"></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Starhela Agency</h1>
+      <p>Your trusted partner for success online.</p>
+      <a href="register.html" class="btn-primary">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Digital Solutions</h3>
+        <p>Boost your business with our top-notch digital strategies.</p>
+      </div>
+      <div class="card">
+        <h3>Consultancy</h3>
+        <p>Expert guidance to grow your brand and revenue.</p>
+      </div>
+      <div class="card">
+        <h3>Support</h3>
+        <p>Reliable support for all your business needs 24/7.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Starhela Agency. All rights reserved.</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      // Simple smooth menu scroll (if using same-page sections)
+const links = document.querySelectorAll('.nav-links a');
+links.forEach(link => {
+  link.addEventListener('click', function(e){
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target) target.scrollIntoView({behavior:'smooth'});
+  });
+});
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
