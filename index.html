@@ -23,58 +23,94 @@ nav{
   justify-content:space-between;
   padding:15px 40px;
   background:white;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
-nav h2 span{color:var(--gold);}
-nav a{margin-left:20px;text-decoration:none;color:black;font-weight:bold;}
+
+nav h2{
+  color:var(--blue);
+}
+
+nav span{
+  color:var(--gold);
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
 
 /* HERO */
 .hero{
-  background:linear-gradient(135deg,var(--blue),#0f172a);
+  background:linear-gradient(135deg,var(--blue),var(--gold));
   color:white;
   text-align:center;
   padding:120px 20px;
 }
-.hero h1{font-size:3rem;}
+
+.hero h1{
+  font-size:3rem;
+}
+
 .btn{
-  background:var(--gold);
+  background:white;
+  color:var(--blue);
   padding:12px 25px;
+  border-radius:5px;
   display:inline-block;
   margin-top:15px;
-  color:black;
-  border-radius:5px;
 }
 
 /* SECTION */
-.section{padding:60px 20px;text-align:center;}
-.container{max-width:1100px;margin:auto;}
+.section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+  gap:25px;
 }
 
 .card{
   background:white;
-  padding:20px;
   border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  padding:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
-.card img{width:100%;border-radius:10px;}
 
-/* CTA STRONG */
+.card img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+/* CTA */
 .cta{
   background:var(--blue);
   color:white;
-  padding:70px 20px;
+  padding:60px 20px;
 }
 
 /* FOOTER */
 footer{
   background:#111827;
   color:white;
-  padding:40px;
-  text-align:center;
+  padding:40px 20px;
 }
+
+footer a{
+  color:#FBBF24;
+  text-decoration:none;
+}
+
 </style>
 </head>
 
@@ -85,90 +121,93 @@ footer{
 <h2>Starhela <span>Agency</span></h2>
 <div>
 <a href="#">Home</a>
-<a href="#">Register</a>
-<a href="#">Contact</a>
+<a href="register.html">Register</a>
+<a href="contact.html">Contact</a>
 </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-<h1>Make Money Online Daily</h1>
-<p>Join Starhela Agency and start earning through simple online activities.</p>
-<a href="#" class="btn">Register Now</a>
+<h1>Earn Money Online Easily</h1>
+<p>Join Starhela Agency and start earning through simple daily online tasks.</p>
+<a href="register.html" class="btn">Start Earning</a>
 </section>
 
 <!-- HOW IT WORKS -->
 <section class="section">
 <div class="container">
-<h2>How It Works</h2>
 
-<div class="grid">
-
-<div class="card">
-<h3>Step 1: Register</h3>
-<p>Create your account in seconds and get access to the platform.</p>
-</div>
-
-<div class="card">
-<h3>Step 2: Activate</h3>
-<p>Activate your account to unlock all earning features.</p>
-</div>
-
-<div class="card">
-<h3>Step 3: Start Earning</h3>
-<p>Begin completing tasks and earning instantly.</p>
-</div>
-
-<div class="card">
-<h3>Step 4: Withdraw</h3>
-<p>Withdraw your earnings anytime using crypto.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- EARNING METHODS -->
-<section class="section" style="background:#f1f5f9;">
-<div class="container">
-<h2>Ways to Earn</h2>
+<h2>How You Earn with Starhela Agency</h2>
+<p>We provide multiple simple ways to earn online. No experience needed.</p>
 
 <div class="grid">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1581090700227-1e8c6fddcf2f">
 <h3>Watch Videos</h3>
-<p>Earn by watching sponsored TikTok and YouTube videos daily.</p>
+<p>Users earn by watching sponsored YouTube and TikTok videos. Each completed video task rewards you with earnings.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da">
 <h3>Click Ads</h3>
-<p>Get paid for clicking and viewing online advertisements.</p>
+<p>Earn by clicking and viewing advertisements from our partners. Simple clicks generate daily income.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040">
-<h3>Crypto Earnings</h3>
-<p>All earnings are processed securely through cryptocurrency.</p>
+<h3>Crypto Withdrawals</h3>
+<p>Your earnings are stored securely and can be withdrawn through cryptocurrency wallets safely and fast.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
 <h3>Referral Program</h3>
-<p>Invite others and earn commissions from their activity.</p>
+<p>Invite friends to join Starhela Agency and earn commission from their activities and tasks.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b1">
 <h3>Spin & Win</h3>
-<p>Use daily spin to earn random bonuses.</p>
+<p>Use the daily spin feature to win bonus rewards, increasing your total earnings.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
 <h3>Chat & Earn</h3>
-<p>Earn rewards by chatting and engaging with global users.</p>
+<p>Engage in chats with international users and earn rewards for your time and interaction.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- STEPS -->
+<section class="section" style="background:#f1f5f9;">
+<div class="container">
+
+<h2>Getting Started is Easy</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>1. Register</h3>
+<p>Create your free account in seconds.</p>
+</div>
+
+<div class="card">
+<h3>2. Activate</h3>
+<p>Activate your account to unlock earning features.</p>
+</div>
+
+<div class="card">
+<h3>3. Complete Tasks</h3>
+<p>Start earning by completing simple online tasks.</p>
+</div>
+
+<div class="card">
+<h3>4. Withdraw</h3>
+<p>Withdraw your earnings anytime through crypto.</p>
 </div>
 
 </div>
@@ -177,24 +216,31 @@ footer{
 
 <!-- CTA -->
 <section class="cta">
-<h2>Start Earning Today</h2>
-<p>Thousands are already earning daily. Don’t miss out.</p>
-<a href="#" class="btn">Create Account</a>
+<h2>Start Your Online Earning Journey Today</h2>
+<p>Thousands of users are already earning daily.</p>
+<a href="register.html" class="btn">Join Now</a>
 </section>
 
 <!-- CONTACT -->
 <section class="section">
 <h2>Contact Us</h2>
-<p>Email: support@starhela-agency.com</p>
-<p>WhatsApp: +971 50 123 4567</p>
-<p>Location: Dubai, UAE</p>
+<p><b>Email:</b> support@starhela-agency.com</p>
+<p><b>WhatsApp:</b> +971 50 123 4567</p>
+<p><b>Location:</b> Dubai, UAE</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
 <h3>Starhela Agency</h3>
-<p>Earn online through simple digital tasks.</p>
-<p>© 2026 Starhela Agency</p>
+<p>Helping you earn online through simple digital tasks.</p>
+
+<p>
+<a href="#">Home</a> |
+<a href="register.html">Register</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>© 2026 Starhela Agency. All rights reserved.</p>
 </footer>
 
 </body>
