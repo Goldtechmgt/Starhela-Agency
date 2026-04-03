@@ -1,123 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="g48D3cUXojDIWTVqjfoCtEZvZ7O6vjJ6es31vP_7FLc" />
-  <title>Starhela Agency- Register | Login</title>
-  <meta keywords="stategain connections, mulapal Agencies, Starhela Agencies, Starhela,STARHELA, Starhela Agency, Qashempire, Mulastar Agency" >
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://state-gain.online" >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starhela Agency</title>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+
+/* EXTRA PRO STYLES */
+body {overflow-x:hidden;}
+
+.hero-wide {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  text-align:center;
+}
+
+.hero-wide h1 {
+  font-size:3.5rem;
+}
+
+.counter-section {
+  display:flex;
+  justify-content:space-around;
+  padding:40px;
+  background:#111827;
+  color:white;
+  flex-wrap:wrap;
+}
+
+.counter-box {
+  text-align:center;
+  margin:10px;
+}
+
+.counter-box h2 {
+  color:#FBBF24;
+  font-size:2.5rem;
+}
+
+.testimonials {
+  background:#f9fafb;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.testimonial-card {
+  max-width:300px;
+  margin:auto;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.ticker {
+  background:#1E40AF;
+  color:white;
+  padding:10px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.ticker span {
+  display:inline-block;
+  padding-left:100%;
+  animation:ticker 15s linear infinite;
+}
+
+@keyframes ticker {
+  0% {transform:translateX(0);}
+  100% {transform:translateX(-100%);}
+}
+
+</style>
 </head>
 
-  <style>
- /* Reset */
-* { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif; }
-body { scroll-behavior: smooth; background: #f9f9f9; color:#1E40AF; }
-
-/* Navbar */
-.navbar {
-  display:flex; justify-content:space-between; align-items:center;
-  padding: 1rem 2rem; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky; top:0; z-index: 1000;
-}
-.navbar .logo img { height:50px; }
-.nav-links { list-style:none; display:flex; gap:1.5rem; }
-.nav-links a { text-decoration:none; color:#1E40AF; font-weight:700; transition:0.3s; }
-.nav-links a:hover { color:#FBBF24; }
-
-/* Hero */
-.hero {
-  display:flex; justify-content:center; align-items:center;
-  height:80vh; background: linear-gradient(to right, #1E40AF, #2563EB);
-  color:white; text-align:center;
-}
-.hero h1 { font-size:3rem; margin-bottom:1rem; }
-.hero p { font-size:1.2rem; margin-bottom:2rem; }
-.btn-primary {
-  background:#FBBF24; color:#1E40AF; padding:0.8rem 2rem; text-decoration:none;
-  border-radius:5px; font-weight:700; transition:0.3s;
-}
-.btn-primary:hover { background:#FFD54F; }
-
-/* Services */
-.services { padding:4rem 2rem; text-align:center; }
-.services h2 { font-size:2.5rem; margin-bottom:2rem; color:#1E40AF; }
-.service-cards { display:flex; gap:2rem; flex-wrap:wrap; justify-content:center; }
-.card { background:white; padding:2rem; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s; width:300px; }
-.card:hover { transform: translateY(-10px); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
-.card h3 { margin-bottom:1rem; color:#1E40AF; }
-.card p { color:#555; }
-
-/* Footer */
-footer { text-align:center; padding:2rem; background:#1E40AF; color:white; }
-footer .social a { margin:0 1rem; color:#FBBF24; text-decoration:none; transition:0.3s; }
-footer .social a:hover { color:white; }
-
- </style>
-  
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo"><img src="assets/images/logo.png" alt="Starhela Agency "></div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="register.html">Register</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Starhela Agency</h1>
-      <p>Your trusted partner for success online.</p>
-      <a href="https://wa.me/256775148084?text=Hello%20coach%20am%20interested%20in%20StarHela%20%20Agencies%20please%20link%20me%20up" class="btn-primary">Get Started</a>
-    </div>
-  </header>
+<header>
+<nav>
+<h2 style="color:#1E40AF;">Starhela <span style="color:#FBBF24;">Agency</span></h2>
+<ul class="nav-links">
+<li><a href="#hero">Home</a></li>
+<li><a href="#earning">Earning</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Digital Solutions</h3>
-        <p>Boost your business with our top-notch digital strategies.</p>
-      </div>
-      <div class="card">
-        <h3>Consultancy</h3>
-        <p>Expert guidance to grow your brand and revenue.</p>
-      </div>
-      <div class="card">
-        <h3>Support</h3>
-        <p>Reliable support for all your business needs 24/7.</p>
-      </div>
-    </div>
-  </section>
+<!-- LIVE TICKER -->
+<div class="ticker">
+  <span>🔥 John earned $50 • Ali earned $120 • Sarah earned $80 • Mike earned $200 • Join now and start earning today!</span>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Starhela Agency. All rights reserved.</p>
-    <div class="social">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
+<!-- HERO -->
+<section class="hero-wide" id="hero">
+<div>
+<h1>Earn Online Daily</h1>
+<p>Crypto • Videos • Ads • Referrals • Bonuses</p>
+<a href="register.html" class="btn btn-main">Start Earning Now</a>
+</div>
+</section>
 
-    </div>
-  </footer>
+<!-- COUNTERS -->
+<section class="counter-section">
+<div class="counter-box">
+<h2 id="users">0</h2>
+<p>Users</p>
+</div>
 
-  <script src="js/script.js">
-          // Simple smooth menu scroll (if using same-page sections)
-const links = document.querySelectorAll('.nav-links a');
-links.forEach(link => {
-  link.addEventListener('click', function(e){
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if(target) target.scrollIntoView({behavior:'smooth'});
-  });
-});
-  </script>
+<div class="counter-box">
+<h2 id="earnings">0</h2>
+<p>Total Earnings</p>
+</div>
+
+<div class="counter-box">
+<h2 id="tasks">0</h2>
+<p>Tasks Completed</p>
+</div>
+</section>
+
+<!-- EARNING METHODS -->
+<section id="earning" class="section">
+<h2 class="section-title">Ways to Earn</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1581090700227-1e8c6fddcf2f">
+<h3>Watch Videos</h3>
+<p>Earn from TikTok & YouTube videos.</p>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da">
+<h3>Ads Clicking</h3>
+<p>Click ads and get paid.</p>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040">
+<h3>Crypto</h3>
+<p>Fast crypto withdrawals.</p>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
+<h3>Referrals</h3>
+<p>Invite friends and earn more.</p>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b1">
+<h3>Spin & Win</h3>
+<p>Daily bonus rewards.</p>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<h3>Chat & Earn</h3>
+<p>Earn while chatting globally.</p>
+</div>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+<h2>What Users Say</h2>
+
+<div class="testimonial-card">
+<p>"I earned my first $100 in 2 days!"</p>
+<strong>- David</strong>
+</div>
+
+<br>
+
+<div class="testimonial-card">
+<p>"Very easy and fast payments!"</p>
+<strong>- Aisha</strong>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Starhela Agency — All Rights Reserved</p>
+</footer>
+
+<script>
+
+/* COUNTER ANIMATION */
+function animate(id, max) {
+  let count = 0;
+  let interval = setInterval(() => {
+    count += Math.ceil(max/100);
+    if(count >= max) {
+      count = max;
+      clearInterval(interval);
+    }
+    document.getElementById(id).innerText = count;
+  }, 20);
+}
+
+animate("users", 12500);
+animate("earnings", 54000);
+animate("tasks", 98000);
+
+</script>
+
 </body>
 </html>
