@@ -143,6 +143,30 @@ footer{
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(0,0,0,0.4);
 }
+  
+  .faq-question {
+    width: 100%;
+    background: #111;
+    color: gold;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid gold;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-left: 3px solid gold;
+  }
+
+  .faq-question:hover {
+    background: #222;
+  } 
 </style>
 </head>
 
@@ -291,6 +315,74 @@ allowfullscreen>
 <a href="https://wa.me/256775148084?text=Hello%20coach%20am%20interested%20in%20StarHela%20%Agency%20please%20link%20me%20up" class="whatsapp-btn" target="_blank">
   💬 Chat with us
 </a>
+
+<h1>About Starhela Agency</h1>
+
+<p>Starhela Agency is a digital earning platform that helps users make money online through simple tasks such as referrals, promotions, and online engagement.</p>
+
+<p>Our mission is to provide opportunities for individuals to earn extra income using their smartphones from anywhere in the world.</p>
+
+<p>We focus on transparency, fast payments, and user satisfaction.</p>
+
+<h2>Why Choose Us?</h2>
+<ul>
+<li>Easy to use platform</li>
+<li>Fast withdrawals</li>
+<li>Trusted by many users</li>
+<li>24/7 support</li>
+</ul>
+
+<a href="index.html">Back to Home</a>
+
+
+  <section style="max-width:900px;margin:auto;padding:20px;font-family:Arial;">
+  <h2 style="text-align:center;color:#b8860b;">Frequently Asked Questions</h2>
+
+  <div class="faq">
+
+    <button class="faq-question">What is this platform about?</button>
+    <div class="faq-answer">
+      <p>This platform helps users learn how to earn money online through simple digital methods like referrals, tasks, and online opportunities.</p>
+    </div>
+
+    <button class="faq-question">How can I start earning?</button>
+    <div class="faq-answer">
+      <p>You can start by registering an account, exploring available earning methods, and following the step-by-step guides provided on the platform.</p>
+    </div>
+
+    <button class="faq-question">Do I need experience to earn?</button>
+    <div class="faq-answer">
+      <p>No. The platform is designed for beginners. Even if you have no experience, you can still start earning easily.</p>
+    </div>
+
+    <button class="faq-question">Is it free to join?</button>
+    <div class="faq-answer">
+      <p>Yes, joining is completely free. No registration fee is required.</p>
+    </div>
+
+    <button class="faq-question">How do I withdraw my earnings?</button>
+    <div class="faq-answer">
+      <p>Withdrawals depend on available payment methods. Instructions will be provided once you reach the minimum withdrawal limit.</p>
+    </div>
+
+    <button class="faq-question">Can I use my phone?</button>
+    <div class="faq-answer">
+      <p>Yes, the platform is fully mobile-friendly and works on all smartphones.</p>
+    </div>
+
+  </div>
+  </section>
+
+<script>
+  const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const answer = btn.nextElementSibling;
+      answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
 <!-- FOOTER -->
 <footer>
 <h3>Starhela Agency</h3>
