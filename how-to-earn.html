@@ -28,6 +28,170 @@
 <li>Other local methods</li>
 </ul>
 
+  <section class="earn-section">
+  <h2>💸 Multiple Ways to Earn</h2>
+  <p>Smart earning system designed for daily income 🚀</p>
+
+  <!-- COUNTERS -->
+  <div class="stats">
+    <div><h3 id="users">0</h3><span>Users</span></div>
+    <div><h3 id="earnings">0</h3><span>Total Earnings</span></div>
+    <div><h3 id="daily">0</h3><span>Daily Bonuses</span></div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="grid">
+    <div class="card">🎡 <span>Spin & Win</span></div>
+    <div class="card">🎯 <span>Fixed Bets</span></div>
+    <div class="card">🎮 <span>Games</span></div>
+    <div class="card">⚽ <span>Soccer</span></div>
+    <div class="card">💬 <span>Chat</span></div>
+    <div class="card">✈️ <span>Aviator</span></div>
+    <div class="card">📢 <span>Facebook Ads</span></div>
+    <div class="card">🎬 <span>Reels</span></div>
+    <div class="card">📝 <span>Articles</span></div>
+    <div class="card">🎁 <span>Daily Bonuses</span></div>
+  </div>
+
+  <!-- CTA -->
+  <a href="https://starhela.site" class="cta">🚀 Start Earning Now</a>
+
+  <!-- WHATSAPP CHANNEL -->
+  <a href="https://whatsapp.com/channel/0029VbCc2izLikg79keHGi0e" target="_blank" class="whatsapp-btn">
+    💬 Join Our WhatsApp Channel
+  </a>
+</section>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://whatsapp.com/channel/0029VbCc2izLikg79keHGi0e" target="_blank" class="whatsapp-float">
+  💬
+</a>
+
+<style>
+.earn-section {
+  padding:50px 20px;
+  background:linear-gradient(135deg,#0f172a,#020617);
+  color:#fff;
+  text-align:center;
+  font-family:sans-serif;
+}
+
+.stats {
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-bottom:40px;
+  flex-wrap:wrap;
+}
+
+.stats div {
+  background:#1e293b;
+  padding:15px 25px;
+  border-radius:10px;
+}
+
+.stats h3 {
+  color:#22c55e;
+}
+
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+  max-width:900px;
+  margin:auto;
+}
+
+/* CARD */
+.card {
+  background:#1e293b;
+  padding:20px;
+  border-radius:12px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.card:hover {
+  background:#22c55e;
+  transform:translateY(-5px) scale(1.05);
+  box-shadow:0 10px 25px rgba(34,197,94,0.4);
+}
+
+/* CTA */
+.cta {
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 30px;
+  background:#22c55e;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.cta:hover {
+  background:#16a34a;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  display:block;
+  margin:20px auto 0;
+  width:max-content;
+  padding:12px 25px;
+  background:#25D366;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.whatsapp-btn:hover {
+  background:#1ebe5d;
+  transform:scale(1.05);
+}
+
+/* FLOATING BUTTON */
+.whatsapp-float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+  z-index:1000;
+}
+
+.whatsapp-float:hover {
+  background:#1ebe5d;
+}
+</style>
+
+<script>
+function animateValue(id, start, end, duration) {
+  let obj = document.getElementById(id);
+  let range = end - start;
+  let current = start;
+  let increment = end > start ? 1 : -1;
+  let stepTime = Math.abs(Math.floor(duration / range));
+
+  let timer = setInterval(function() {
+    current += increment;
+    obj.textContent = current + "+";
+    if (current == end) clearInterval(timer);
+  }, stepTime);
+}
+
+animateValue("users", 0, 1200, 2000);
+animateValue("earnings", 0, 5000, 2000);
+animateValue("daily", 0, 300, 2000);
+</script>
 <a href="index.html">Back to Home</a>
 
 </body>
